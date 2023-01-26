@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Web Development Project</title>
+  <link rel= "stylesheet" href="index.css" />
+
+</head>
+<body>
+
+  <img src="carimage.jpeg"> 
+  <div align="center">
+    <h1>Parking Lot Management System</h1>
+
+    <form id="myForm">
+      <br><br>
+      <input type="text" name="owner" value="" placeholder="Vehicle Owner Name">
+      <br>
+      <input type="text" name="vName" value="" placeholder="Vehicle Name">
+      <br>
+      <input type="text" name="vNumber" value="" placeholder="Vehicle Number">
+      <br>
+      <input id="entryDate" type="date" name="entryDate" value="" placeholder="Entry Date: dd/mm/yyyy">
+      <br>
+      <input type="date" name="exitDate" value="" placeholder="Exit Date: dd/mm/yyyy">
+      <br><br>
+      <button id="submitBtn" type="submit" name="submit">SUBMIT</button>
+    </form>
+
+    <br><br><br><br>
+    <table>
+      <caption class="caption_class">
+        Available Cars in Parking Lot -
+      </caption>
+      <thead>
+        <th>Owner's Name</th>
+        <th>Vechile's Name</th>
+        <th>Vechile's Number</th>
+        <th>Entry Date</th>
+        <th>Exit Date</th>
+        <th>Delete</th>
+      </thead>
+
+      <tbody id="cars_table">
+      </tbody>
+
+    </table>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
